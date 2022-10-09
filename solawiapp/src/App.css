@@ -1,0 +1,193 @@
+
+.container {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+.feld {
+  height: 180px;
+  width: 120px;
+  margin-right: 20px;
+  z-index: 1;
+}
+
+.feldSpezial {
+  height: 180px;
+  width: 120px;
+  margin-right: 20px;
+  z-index: -1;
+}
+
+.tunnel {
+  height: 170px;
+  width: 120px;
+  margin-right: 20px;
+  margin-top: 40px;
+
+}
+
+.ghostFeld{
+  height: 80px;
+  width: 120px;
+  background-color: #212426;
+  margin-top: 20px;
+}
+
+.feldHintergrund {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #99B840;
+
+}
+.kleinesFeld {
+  height: 80px;
+  width: 120px;
+}
+
+.feldSechs {
+  height: 80px;
+  width: 250px;
+}
+
+.feldTeiler {
+  margin-bottom: 10px;
+}
+
+.feldTeilerGross {
+  margin-bottom: 40px;
+}
+
+.tunnelt1 {
+  height: 300px;
+  width: 50px;
+  background-color: #809C79;
+  border: 1px solid white;
+  padding: 50px;
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-right: 10px;
+  color: white;
+  font-size: 20pt;
+  text-align: center;
+  position: fixed;
+  cursor: pointer;
+}
+
+.tunnelt2a {
+  height: 90px;
+  width: 50px;
+  background-color: #809C79;
+  border: 1px solid white;
+  padding: 50px;
+  color: white;
+  font-size: 20pt;
+  text-align: center;
+  margin-left: 220px;
+  margin-top: 240px;
+  margin-right: 20px;
+  position: fixed;
+}
+
+.tunnelt2b {
+  height: 100px;
+  width: 50px;
+  background-color: #809C79;
+  border: 1px solid white;
+  padding: 50px;
+  color: white;
+  font-size: 20pt;
+  text-align: center;
+  margin-left: 220px;
+  margin-top: 30px;
+  margin-right: 20px;
+  position: fixed;
+}
+
+
+.tunnelt3a {
+  height: 90px;
+  width: 50px;
+  background-color: #809C79;
+  border: 1px solid white;
+  padding: 50px;
+  color: white;
+  font-size: 20pt;
+  text-align: center;
+  margin-left: 410px;
+  margin-top: 240px;
+  margin-right: 20px;
+  position: fixed;
+}
+
+.tunnelt3b {
+  height: 100px;
+  width: 50px;
+  background-color: #809C79;
+  border: 1px solid white;
+  padding: 50px;
+  color: white;
+  font-size: 20pt;
+  text-align: center;
+  margin-left: 410px;
+  margin-top: 30px;
+  margin-right: 20px;
+  position: fixed;
+}
+
+.tunnelt4a {
+  height: 90px;
+  width: 50px;
+  background-color: #809C79;
+  border: 1px solid white;
+  padding: 50px;
+  color: white;
+  font-size: 20pt;
+  text-align: center;
+  margin-left: 600px;
+  margin-top: 240px;
+  margin-right: 20px;
+  position: fixed;
+}
+
+.tunnelt4b {
+  height: 100px;
+  width: 50px;
+  background-color: #809C79;
+  border: 1px solid white;
+  padding: 50px;
+  color: white;
+  font-size: 20pt;
+  text-align: center;
+  margin-left: 600px;
+  margin-top: 30px;
+  margin-right: 20px;
+  position: fixed;
+}
+
+.tunnelt5 {
+  height: 300px;
+  width: 50px;
+  background-color: #809C79;
+  border: 1px solid white;
+  padding: 50px;
+  margin-left: 790px;
+  margin-top: 30px;
+  margin-right: 10px;
+  color: white;
+  font-size: 20pt;
+  text-align: center;
+  position: fixed;
+}
+
+
+body {
+  font-family: var(--font-roboto);
+  background-color: #212426;
+}
+
+p {
+  color: black;
+}
