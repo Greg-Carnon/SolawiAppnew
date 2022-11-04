@@ -16,3 +16,13 @@
     justify-content: center;
     background-color: #99B840;
 }  
+
+.verlinkung {
+  padding-left: 10px;
+  color: white;
+}
+
+.verlinkung2 {
+  text-decoration: none;
+  color: white;
+}

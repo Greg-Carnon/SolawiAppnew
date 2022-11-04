@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import "./navigation.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
 
@@ -39,6 +40,7 @@ const Navbar = () => {
 
             <div className={menu_class}>
                 <div className="menu-item">
+                    <Link to="/"><div style={{padding: "10px"}}>Fledübersicht</div></Link>
                     <div style={{padding: "10px"}}>Ernteplan</div>
                     <div style={{padding: "10px"}}>Pflanzen A-Z</div>
                     <div style={{padding: "10px"}}>Rezepte A-Z</div>

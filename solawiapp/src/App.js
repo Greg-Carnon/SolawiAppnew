@@ -1,82 +1,44 @@
-import Modal from "./Modal.js";
-import './App.css';
-import React, { useState } from "react";
+
+import Home from './components/Home';
 import Navbar from "./components/navigation.js";
-import EinzelnesFeld from "./components/einzelnesFeld.js";
+import { Routes, Route} from "react-router-dom";
+import Feldeins from './components/feldeins';
+import Feldzwei from './components/feldzwei';
+import Felddrei from './components/felddrei';
+import Feldvier from './components/feldvier';
+import Feldfunf from './components/feldfunf';
+import Feldsechs from './components/feldsechs';
+import Feldsieben from './components/feldsieben';
+import Feldacht from './components/feldacht';
+import Feldneun from './components/feldneun';
+import Feldzehn from './components/feldzehn';
+import Tunnel from './components/Tunnel';
+
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false)
   return (
+
+    <div>
+            <div> 
+                <Navbar />
+            </div>
+
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/feldeins" element={<Feldeins />} />
+                <Route path="/feldzwei" element={<Feldzwei />} />
+                <Route path="/felddrei" element={<Felddrei />} />
+                <Route path="/feldvier" element={<Feldvier />} />
+                <Route path="/feldfunf" element={<Feldfunf />} />
+                <Route path="/feldsechs" element={<Feldsechs />} />
+                <Route path="/feldsieben" element={<Feldsieben />} />
+                <Route path="/feldacht" element={<Feldacht />} />
+                <Route path="/feldneun" element={<Feldneun />} />
+                <Route path="/feldzehn" element={<Feldzehn />} />
+                <Route path="/tunnel" element={<Tunnel />} />
+            </Routes>
+    </div>
    
-   <div> 
-      <Navbar />
-
-   <div class="container">
-    <div class="feld">
-        <div class="kleinesFeld feldTeiler feldHintergrund">
-            Feld 4
-        </div>
-
-        <div class="kleinesFeld feldTeilerGross feldHintergrund">
-            Feld 3
-        </div>
-
-        <div class="kleinesFeld feldTeiler feldHintergrund">
-            Feld 2
-        </div>
-
-        <div class="kleinesFeld feldTeiler feldHintergrund">
-            Feld 1
-        </div>
-
-    </div>
-
-
-
-    <div class="feld">
-        <div class="kleinesFeld feldTeiler feldHintergrund">
-            Feld 5
-        </div>
-
-        <div class="feldSechs feldHintergrund">
-            Feld 6
-        </div>
-
-        <div class="tunnel feldHintergrund">
-        Tunnel
-        </div>
-
-    </div>
-
-    <div class="feldSpezial">
-        
-    <div class="ghostFeld feldTeiler ">
-             
-        </div>
-
-        <div class="ghostFeld feldTeiler ">
-             
-        </div>
-        
-        <div class="kleinesFeld feldTeiler feldHintergrund">
-            Feld 7
-        </div>
-
-        <div class="kleinesFeld feldTeiler feldHintergrund">
-            Feld 8
-        </div>
-    </div>
-    
-    
-        
-    <Modal open={isOpen} close={() => setIsOpen(false)}>
-    <iframe width="500" height="400" src="https://www.solawineufarn.de/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </Modal>
-
-        <div><EinzelnesFeld /></div>
-    </div>
-
-    </div>
   );
 }
 
