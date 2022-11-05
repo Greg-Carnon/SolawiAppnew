@@ -19,13 +19,18 @@ const Home = () => {
   return (
     <div>
         <div>
-            <p>Herzlich Willkommen in der Solawi Neufarn App. Mit dieser App findest du zu jeder unserer 
-            Pflanzen eine Beschreibung, Ernteanleitung & passende Rezepte.
-            Klicke auf ein Feld!
+            <h1 className='headline'>FELDÜBERSICHT
+            </h1>
+        </div>
+
+        <div>
+             <p>Herzlich Willkommen in der Solawi Neufarn App. Mit dieser App findest du zu jeder unserer 
+                Pflanzen eine Beschreibung, Ernteanleitung & passende Rezepte.
+                Klicke auf ein Feld!
             </p>
         </div>
 
-        <div class="container">
+        <div class="containeruber">
             <div class="feld">
                 <Link className='verlinkung2' to="/feldvier">
                 <div class="kleinesFeld feldTeiler feldHintergrund">
@@ -99,8 +104,13 @@ const Home = () => {
                     Feld 10
                 </div>
                 </Link>
+
+
             </div>
         </div>
+
+
+      
 
         <Routes>
                 <Route path="/feldeins" element={<Feldeins />} />

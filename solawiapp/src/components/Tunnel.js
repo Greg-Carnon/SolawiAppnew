@@ -1,27 +1,39 @@
 import Modal from "../Modal.js";
-import './App.css';
+import './Tunnel.css';
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <div className="App">
+    
+    <>
+      <Link className="verlinkung" to="/">ZUR FELDÜBERSICHT</Link>
 
-        <div className="tunnelt1" onClick={() => setIsOpen(true)}>T1</div>
-        <div className="tunnelt2a">T2A</div>
-        <div className="tunnelt2b">T2B</div>
-        <div className="tunnelt3a">T3A</div>
-        <div className="tunnelt3b">T3B</div>
-        <div className="tunnelt4a">T4A</div>
-        <div className="tunnelt4b">T4B</div>
-        <div className="tunnelt5">T5</div>
+        <div className="containerT">
+            <div className="langerT  feldHintergrundT">T1</div>
+            <div className="feldT">
+            <div className="kurzerT  feldHintergrundT">T2a</div>
+            <div className="kurzerT  feldHintergrundT">T2b</div>
+            </div>
+            <div className="feldT">
+            <div className="kurzerT  feldHintergrundT">T3a</div>
+            <div className="kurzerT  feldHintergrundT">T3b</div>
+            </div>
+            <div className="feldT">
+            <div className="kurzerT  feldHintergrundT">T4a</div>
+            <div className="kurzerT  feldHintergrundT">T4b</div>
+            </div>
+            <div className="langerT  feldHintergrundT">T5</div>
+        </div>
+
 
     <Modal open={isOpen} close={() => setIsOpen(false)}>
     <iframe width="500" height="400" src="https://www.solawineufarn.de/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </Modal>
 
 
-    </div>
+    </>
   );
 }
 

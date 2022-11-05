@@ -1,8 +1,10 @@
 
-.container {
+.containeruber {
   display: flex;
   flex-direction: row;
-  margin: 20px;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 .feld {
@@ -16,14 +18,14 @@
   height: 180px;
   width: 100px;
   margin-right: 10px;
-  z-index: -1;
+  z-index: 1;
 }
 
 .tunnel {
-  height: 170px;
+  height: 180px;
   width: 100px;
   margin-right: 10px;
-  margin-top: 40px;
+  margin-top: 10px;
 
 }
 
@@ -44,8 +46,8 @@
   align-items: center;
   justify-content: center;
   background-color: #99B840;
-
 }
+
 .kleinesFeld {
   height: 80px;
   width: 100px;
@@ -57,7 +59,7 @@
 }
 
 .feldTeiler {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .feldTeilerGross {
@@ -195,6 +197,12 @@ body {
 p {
   font-family: var(--font-roboto);
   color:  white;
-  padding: 5px;
+  padding: 10px;
   
+}
+
+.headline {
+  color:white;
+  text-align: center;
+  padding: 10px;
 }
