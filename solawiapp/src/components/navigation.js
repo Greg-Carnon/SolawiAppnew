@@ -32,7 +32,7 @@ const Navbar = () => {
     return (
         <div style={{width: "100%", height: "100px"}}>
             <nav>
-                <img src={logo} alt="Logo" className="logo"/>;
+                <img src={logo} alt="Logo" className="logo"/>
                 <div className="burger-menu" onClick={updateMenu}>
                     <div className={burger_class}>  </div>
                     <div className={burger_class}>  </div>

@@ -6,8 +6,10 @@ const MODAL_STYLES = {
     left: "50%",
     transform: "translate(-50%, -50%)",
     backgroundColor: "#607178",
-    padding: "50px",
+    padding: "5px",
     zIndex: 1000,
+    border: "1px",
+    borderRadius: "10px",
 }
 
 const OVERLAY_STYLE = {
@@ -27,6 +29,7 @@ const HEADLINE = {
     left: "75%",
     cursor: "pointer",
     backgroundColor: "#443532",
+    margin: "10px",
 }
 
 export default function Modal({ open, children, close }) {
@@ -35,7 +38,7 @@ export default function Modal({ open, children, close }) {
         <>
             <div style={OVERLAY_STYLE} />
             <div style={MODAL_STYLES}>
-                <button style={HEADLINE} onClick={close}>SCHLIESSEN</button>
+                <button style={HEADLINE} onClick={close}> X </button>
                 {children}
             </div>
         </>

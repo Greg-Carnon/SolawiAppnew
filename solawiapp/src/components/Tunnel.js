@@ -11,7 +11,7 @@ function App() {
       <Link className="verlinkung" to="/">ZUR FELDÜBERSICHT</Link>
 
         <div className="containerT">
-            <div className="langerT  feldHintergrundT">T1</div>
+            <div className="langerT  feldHintergrundT" onClick={() => setIsOpen(true)}>T1</div>
             <div className="feldT">
             <div className="kurzerT  feldHintergrundT">T2a</div>
             <div className="kurzerT  feldHintergrundT">T2b</div>
@@ -29,7 +29,21 @@ function App() {
 
 
     <Modal open={isOpen} close={() => setIsOpen(false)}>
-    <iframe width="500" height="400" src="https://www.solawineufarn.de/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div className="ModalDiv">
+        <h2>Pflanzen im Fled T1</h2>
+          <ul>
+            <li>
+            <a href="www.obst.de">Apfel</a>
+            </li>
+            <li>
+            <a href="www.obst.de">Apfel</a>
+            </li>
+            <li>
+            <a href="www.obst.de">Apfel</a>
+            </li>
+          </ul>
+      </div>
+    
     </Modal>
 
 
