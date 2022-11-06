@@ -33,13 +33,13 @@ function App() {
         <h2>Pflanzen im Fled T1</h2>
           <ul>
             <li>
-            <a href="www.obst.de">Apfel</a>
+            <a href="https://www.solawineufarn.de/mairuebe">Mairübe</a>
             </li>
             <li>
-            <a href="www.obst.de">Apfel</a>
+            <a href="https://www.solawineufarn.de/mairuebe">Mairübe</a>
             </li>
             <li>
-            <a href="www.obst.de">Apfel</a>
+            <a href="https://www.solawineufarn.de/mairuebe">Mairübe</a>
             </li>
           </ul>
       </div>

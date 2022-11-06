@@ -19,8 +19,8 @@ const Home = () => {
   return (
     <div>
         <div>
-            <h1 className='headline'>FELDÜBERSICHT
-            </h1>
+            <h2 className='headline'>FELDÜBERSICHT
+            </h2>
         </div>
 
         <div>

@@ -66,143 +66,24 @@
   margin-bottom: 40px;
 }
 
-.tunnelt1 {
-  height: 300px;
-  width: 50px;
-  background-color: #809C79;
-  border: 1px solid white;
-  padding: 50px;
-  margin-left: 30px;
-  margin-top: 30px;
-  margin-right: 10px;
-  color: white;
-  font-size: 20pt;
-  text-align: center;
-  position: fixed;
-  cursor: pointer;
-}
-
-.tunnelt2a {
-  height: 90px;
-  width: 50px;
-  background-color: #809C79;
-  border: 1px solid white;
-  padding: 50px;
-  color: white;
-  font-size: 20pt;
-  text-align: center;
-  margin-left: 220px;
-  margin-top: 240px;
-  margin-right: 20px;
-  position: fixed;
-}
-
-.tunnelt2b {
-  height: 100px;
-  width: 50px;
-  background-color: #809C79;
-  border: 1px solid white;
-  padding: 50px;
-  color: white;
-  font-size: 20pt;
-  text-align: center;
-  margin-left: 220px;
-  margin-top: 30px;
-  margin-right: 20px;
-  position: fixed;
-}
-
-
-.tunnelt3a {
-  height: 90px;
-  width: 50px;
-  background-color: #809C79;
-  border: 1px solid white;
-  padding: 50px;
-  color: white;
-  font-size: 20pt;
-  text-align: center;
-  margin-left: 410px;
-  margin-top: 240px;
-  margin-right: 20px;
-  position: fixed;
-}
-
-.tunnelt3b {
-  height: 100px;
-  width: 50px;
-  background-color: #809C79;
-  border: 1px solid white;
-  padding: 50px;
-  color: white;
-  font-size: 20pt;
-  text-align: center;
-  margin-left: 410px;
-  margin-top: 30px;
-  margin-right: 20px;
-  position: fixed;
-}
-
-.tunnelt4a {
-  height: 90px;
-  width: 50px;
-  background-color: #809C79;
-  border: 1px solid white;
-  padding: 50px;
-  color: white;
-  font-size: 20pt;
-  text-align: center;
-  margin-left: 600px;
-  margin-top: 240px;
-  margin-right: 20px;
-  position: fixed;
-}
-
-.tunnelt4b {
-  height: 100px;
-  width: 50px;
-  background-color: #809C79;
-  border: 1px solid white;
-  padding: 50px;
-  color: white;
-  font-size: 20pt;
-  text-align: center;
-  margin-left: 600px;
-  margin-top: 30px;
-  margin-right: 20px;
-  position: fixed;
-}
-
-.tunnelt5 {
-  height: 300px;
-  width: 50px;
-  background-color: #809C79;
-  border: 1px solid white;
-  padding: 50px;
-  margin-left: 790px;
-  margin-top: 30px;
-  margin-right: 10px;
-  color: white;
-  font-size: 20pt;
-  text-align: center;
-  position: fixed;
-}
-
 
 body {
   font-family: var(--font-roboto);
-  background-color: #212426;
+  background-color: #fff;
 }
 
 p {
   font-family: var(--font-roboto);
-  color:  white;
-  padding: 10px;
+  color:  black;
+  margin-left: 27px;
+  margin-right: 27x;
+  margin-bottom: 20px;
   
 }
 
 .headline {
-  color:white;
-  text-align: center;
-  padding: 10px;
+  color: black;
+  text-align: left;
+  padding: 5px;
+  margin-left:20px;
 }

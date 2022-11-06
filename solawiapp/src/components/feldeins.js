@@ -6,7 +6,12 @@ const Feldeins = () => {
   return (
 
     <>
-      <Link className="verlinkung" to="/">ZUR FELDÜBERSICHT</Link>
+        <div className='box'>
+          <h2 style={{paddingRight: "120px"}}>FELD 1</h2>
+          <Link className="verlinkung" to="/">FELDÜBERSICHT</Link>
+        </div>
+
+        <p style={{ paddingTop: "15px", paddingLeft: "5px", paddingRight:"5px", paddingBottom: "10px"}}>Klicke auf eine Reihe, um die angebauten Pflanzen zu sehen.</p>
 
         <div className="container">
             <div className="reihe">1a</div>
