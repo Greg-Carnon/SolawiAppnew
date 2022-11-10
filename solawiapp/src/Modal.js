@@ -5,8 +5,8 @@ const MODAL_STYLES = {
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    backgroundColor: "#607178",
-    padding: "5px",
+    backgroundColor: "rgb(37, 39, 53)",
+    padding: "25px",
     zIndex: 1000,
     border: "1px",
     borderRadius: "10px",
@@ -23,12 +23,12 @@ const OVERLAY_STYLE = {
 }
 
 const HEADLINE = {
-    color: "white",
+    color: "black",
     position: "fixed",
-    top: "5%",
-    left: "75%",
+    top: "1%",
+    left: "82%",
     cursor: "pointer",
-    backgroundColor: "#443532",
+    backgroundColor: "white",
     margin: "10px",
 }
 

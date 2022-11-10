@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from "react";
+import Modal from "../Modal.js";
 import "./einzelnesfeld.css";
 import { Link } from "react-router-dom";
 
 const Feldzehn = () => {
+  const [isOpen, setIsOpen] = useState(false)
   return (
     <>
         <div className='box'>
@@ -10,20 +12,62 @@ const Feldzehn = () => {
           <Link className="verlinkung" to="/">FELDÜBERSICHT</Link>
         </div>
 
-        <p style={{ paddingTop: "15px", paddingLeft: "5px", paddingRight:"5px", paddingBottom: "10px"}}>Klicke auf eine Reihe, um die angebauten Pflanzen zu sehen.</p>
 
         <div className="container">
-            <div className="reihe">10a</div>
-            <div className="reihe">10b</div>
-            <div className="reihe">10c</div>
-            <div className="reihe">10d</div>
-            <div className="reihe">10e</div>
-            <div className="reihe">10f</div>
-            <div className="reihe">10g</div>
-            <div className="reihe">10h</div>
-            <div className="reihe">10i</div>
-            <div className="reihe">10j</div>
+            <div className="reihe" onClick={() => setIsOpen(true)}>10a</div>
+            <div className="reihe" onClick={() => setIsOpen(true)}>10b</div>
+            <div className="reihe" onClick={() => setIsOpen(true)}>10c</div>
+            <div className="reihe" onClick={() => setIsOpen(true)}>10d</div>
+            <div className="reihe" onClick={() => setIsOpen(true)}>10e</div>
+            <div className="reihe" onClick={() => setIsOpen(true)}>10f</div>
+            <div className="reihe" onClick={() => setIsOpen(true)}>10g</div>
+            <div className="reihe" onClick={() => setIsOpen(true)}>10h</div>
+            <div className="reihe" onClick={() => setIsOpen(true)}>10i</div>
+            <div className="reihe" onClick={() => setIsOpen(true)}>10j</div>
         </div>
+
+        <div>
+            <p style={{paddingTop: "30px", paddingLeft: "5px", paddingRight: "10px" }}>Diese Pflanzen befinden sich alle im Feld. Klicke auf eine Reihe, um genau zu sehen welche Pflanzen dort zu finden sind. Mit Klick auf eine Pflanze erhälst du Beschreibung, Erntetipps & Rezepte dazu.</p>
+
+            <div style={{ paddingLeft: "5px", paddingRight: "10px" }}>
+                  <ul >
+                      <li>
+                          <a style={{color: "blue" }} href="https://www.solawineufarn.de/mairuebe">Mairübe</a>
+                      </li>
+                      <li>
+                          <a style={{color: "blue" }} href="https://www.solawineufarn.de/mairuebe">Mairübe</a>
+                      </li>
+                      <li>
+                          <a style={{color: "blue" }} href="https://www.solawineufarn.de/mairuebe">Mairübe</a>
+                      </li>
+                      <li>
+                          <a style={{color: "blue" }} href="https://www.solawineufarn.de/mairuebe">Mairübe</a>
+                      </li>
+                      <li>
+                          <a style={{color: "blue" }} href="https://www.solawineufarn.de/mairuebe">Mairübe</a>
+                      </li>
+                  </ul>
+            </div>
+        </div>
+
+
+        <Modal open={isOpen} close={() => setIsOpen(false)}>
+            <div className="ModalDiv">
+              <h2 style={{color: "white", paddingBottom: "10px" }}>Pflanzen in dieser Reihe</h2>
+                <ul>
+                  <li style={{color: "white", padding: "10px" }}>
+                  <a style={{color: "white" }} href="https://www.solawineufarn.de/mairuebe">Mairübe</a>
+                  </li>
+                  <li style={{color: "white", padding: "10px" }}>
+                  <a style={{color: "white" }} href="https://www.solawineufarn.de/mairuebe">Mairübe</a>
+                  </li>
+                  <li style={{color: "white", padding: "10px" }}>
+                  <a style={{color: "white" }} href="https://www.solawineufarn.de/mairuebe">Mairübe</a>
+                  </li>
+                </ul>
+            </div>
+        </Modal>
+
     </>
   )
 };

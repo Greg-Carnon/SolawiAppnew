@@ -43,8 +43,7 @@ const Navbar = () => {
             <div className={menu_class}>
                 <div className="menu-item">
                     <Link to="/"><div onClick={updateMenu} className="menulink">Feldübersicht </div></Link>
-                    <div style={{padding: "10px"}}>Pflanzen A-Z</div>
-                    <div style={{padding: "10px"}}>Rezepte A-Z</div>
+                    <div style={{padding: "10px"}} onClick={() => openInNewTab('https://www.solawineufarn.de/pflanzen')}>Pflanzen A-Z</div>
                     <div style={{padding: "10px"}} onClick={() => openInNewTab('https://www.solawineufarn.de/')}>Website</div>
                 </div>
             </div>

@@ -16,7 +16,8 @@ nav {
 .menulink {
     color: white;
     text-decoration: none;
-    padding-left: 10px;
+    padding: 10px;
+
 }
 
 a:visited { 
