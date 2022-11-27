@@ -32,27 +32,27 @@ const Home = () => {
 
         <div class="containeruber">
             <div class="feld">
-                <Link className='verlinkung2' to="/feldvier">
+                <Link className='verlinkung2' to="/feldsieben">
                 <div class="kleinesFeld feldTeiler feldHintergrund">
-                    Feld 4
+                    Feld 7
                 </div>
                 </Link>
 
-                <Link className='verlinkung2' to="/felddrei">
+                <Link className='verlinkung2' to="/feldacht">
                 <div class="kleinesFeld feldTeiler feldHintergrund">
-                    Feld 3
+                    Feld 8
                 </div>
                 </Link>
 
-                <Link className='verlinkung2' to="/feldzwei">
+                <Link className='verlinkung2' to="/feldneun">
                 <div class="kleinesFeld feldTeiler feldHintergrund">
-                    Feld 2
+                    Feld 9
                 </div>
                 </Link>
 
-                <Link className='verlinkung2' to="/feldeins">
+                <Link className='verlinkung2' to="/feldzehn">
                 <div class="kleinesFeld feldTeiler feldHintergrund">
-                    Feld 1
+                    Feld 10
                 </div>
                 </Link>
             </div>
@@ -81,27 +81,27 @@ const Home = () => {
 
             <div class="feldSpezial">
                 
-                <Link className='verlinkung2' to="/feldsieben">
+                <Link className='verlinkung2' to="/feldvier">
                 <div class="kleinesFeld feldTeiler feldHintergrund">
-                    Feld 7
+                    Feld 4
                 </div>
                 </Link>
                 
-                <Link className='verlinkung2' to="/feldacht">
+                <Link className='verlinkung2' to="/felddrei">
                 <div class="kleinesFeld feldTeiler feldHintergrund">
-                    Feld 8
+                    Feld 3
                 </div>
                 </Link>
 
-                <Link className='verlinkung2' to="/feldneun">
+                <Link className='verlinkung2' to="/feldzwei">
                 <div class="kleinesFeld feldTeiler feldHintergrund">
-                    Feld 9
+                    Feld 2
                 </div>
                 </Link>
 
-                <Link className='verlinkung2' to="/feldzehn">
+                <Link className='verlinkung2' to="/feldeins">
                 <div class="kleinesFeld feldTeiler feldHintergrund">
-                    Feld 10
+                    Feld 1
                 </div>
                 </Link>
 
